@@ -1,0 +1,4 @@
+name: finetune_gigapath
+setting: continuous
+max_tiles: 100000
+shuffle_tiles: true
