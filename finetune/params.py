@@ -15,7 +15,6 @@ def get_finetune_params():
 
     # input data settings
     parser.add_argument('--dataset_csv',    type=str, default='./data/meta.csv', help='Dataset csv file')
-    #parser.add_argument('--split_dir',      type=str, default='', help='Split directory')
     parser.add_argument('--root_path',      type=str, default='', help='The tile encodings path')
     parser.add_argument('--tile_size',      type=int, default=256, help='Tile size in pixels')
     parser.add_argument('--max_wsi_size',   type=int, default=250000, help='Maximum WSI size in pixels for the longer side (width or height).')
@@ -28,7 +27,7 @@ def get_finetune_params():
     parser.add_argument('--test_fold',      type=parse_list, default=[6], help='Folds to test on')
 
     # model settings
-    parser.add_argument('--model_arch',     type=str, default='longnet_enc12l768d')
+    parser.add_argument('--model_arch',     type=str, default='gigapath_slide_enc12l768d')
     parser.add_argument('--input_dim',      type=int, default=1536, help='Dimension of input tile embeddings')
     parser.add_argument('--latent_dim',     type=int, default=768, help='Hidden dimension of the slide encoder')
     parser.add_argument('--feat_layer',     type=str, default='11', help='The layers from which embeddings are fed to the classifier, e.g., 5-11 for taking out the 5th and 11th layers')
@@ -52,7 +51,6 @@ def get_finetune_params():
     parser.add_argument('--layer_decay',    type=float, default=0.95, help='Layer-wise learning rate decay')
     parser.add_argument('--dropout',        type=float, default=0.1, help='Dropout rate')
     parser.add_argument('--drop_path_rate', type=float, default=0, help='Drop path rate')
-    #parser.add_argument('--val_r',          type=float, default=0.1, help='Ratio of data used for validation')
     parser.add_argument('--model_select',   type=str, default='last_epoch', help='Criteria for choosing the model checkpoint', choices=['val', 'last_epoch'])
     parser.add_argument('--save_dir',       type=str, default='', help='Save directory')
     parser.add_argument('--num_workers',    type=int, default=20, help='Number of workers')
@@ -61,6 +59,5 @@ def get_finetune_params():
     parser.add_argument('--fp16',           action='store_true', default=True, help='Fp16 training')
     parser.add_argument('--test_on_all',    action='store_true', default=False, help='Test also on slides without label')
     parser.add_argument('--run_inference',  action='store_true', default=False, help='Only run inference')
-    #parser.add_argument('--weighted_sample',action='store_true', default=False, help='Weighted sampling')
 
     return parser.parse_args()
