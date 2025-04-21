@@ -12,8 +12,8 @@ class SlideDatasetForTasks(Dataset):
                  root_path: str,
                  task_config: dict, 
                  slide_key: str='file',
-                 label: str='onco_score_26',
-                 dataset_name: list= ['TAILORx_1'],
+                 label: str='RS',
+                 dataset_name: list= ['TCGA'],
                  folds: list=[2,3,4,5],
                  test_on_all: bool=False,
                  **kwargs
@@ -142,8 +142,8 @@ class SlideDataset(SlideDatasetForTasks):
                  root_path: str,
                  task_config: dict,
                  slide_key: str='file',
-                 label: str='onco_score_26',
-                 dataset_name: list= ['TAILORx_1'],
+                 label: str='RS',
+                 dataset_name: list= ['TCGA'],
                  folds: list=[1,2,3,4,5],
                  test_on_all: bool=False,
                  **kwargs
