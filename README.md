@@ -4,6 +4,20 @@ A deep learning pipeline for the prediction of breast cancer recurrence risk (On
 
 The feature‑extraction backbone and slide‑level transformer architecture are adapted from https://github.com/prov-gigapath/prov-gigapath © the Prov‑GigaPath authors, licensed under Apache‑2.0, and adjusted to fit our requirements.
 
+The software has been tested with Ubuntu 22.04, an NVIDIA RTX A6000 gpu and the following python libraries (also specified in environment.yml):
+
+--------------------
+        python=3.9.18
+        torch=2.0.0
+        numpy=1.26.4
+        pandas=2.2.2
+        scipy=1.13.1
+        openslide-python=1.3.1
+
+
+In the tested configuration, the environment installation time averages 20 minutes. Typical fine-tuning time for the public TCGA data with 500 training slides averages 15 minutes. Inference averages 3 minutes per slide.
+
+
 
 Usage
 -----
@@ -24,6 +38,7 @@ Run with default parameters:
     $ python3 run_preprocess.py --data_dir ./TCGA --metadata ./TCGA/meta.csv
     
 The script will create two folders in the data directory named Grids_10 and SegData which are necessary for the later steps.
+The slides must be whole slide image (WSI) files in a format supported by the openslide library (for example .svs). One public source for WSIs is The Cancer Genome Atlas (TCGA) dataset, and the slides from TCGA can be obtained from the Genomic Data Commons (GDC) website. Explanation on how to download TCGA slides can be found at: https://docs.gdc.cancer.gov/Data_Transfer_Tool/Users_Guide/Data_Download_and_Upload/
 
 
 2) Extract slide tile features:
