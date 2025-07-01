@@ -1,6 +1,6 @@
 TransformerWSI4OncoDXPrediction
 -----
-A deep learning pipeline for the prediction of breast cancer recurrence risk (OncotypeDX) and chemotherapy benefit from H&E‑stained whole slide images. This repository provides preprocessing, feature extraction, training and inference scripts for the paper "Deep Learning on Histopathological Images to Predict Breast Cancer Recurrence Risk and Chemotherapy Benefit".
+A deep learning pipeline for the prediction of breast cancer recurrence risk (OncotypeDX) and chemotherapy benefit from H&E‑stained whole slide images.
 
 The feature‑extraction backbone and slide‑level transformer architecture are adapted from https://github.com/prov-gigapath/prov-gigapath © the Prov‑GigaPath authors, licensed under Apache‑2.0, and adjusted to fit our requirements.
 
@@ -150,17 +150,7 @@ To install the requirements, use:
 
 Citation
 --------
-If you use this code, please cite both Prov-Gigapath and our paper:
-
-```bibtex
-@article{TBD,
-  title={Deep Learning on Histopathological Images to Predict Breast Cancer Recurrence Risk and Chemotherapy Benefit},
-  author={Gil Shamai, Shachar Cohen, Yoav Binenbaum, Edmond Sabo, Alexandra Cretu, Chen Mayer, Iris Barshak, Tal Goldman, Gil Bar-Sela, António Polónia, Howard M. Frederick, Dezheng Huo, Alexander T. Pearson, ECOG-ACRIN authors, Ron Kimmel, and Dvir Aran},
-  journal={TBD},
-  year={2025},
-  publisher={TBD}
-}
-```
+If you use this code, please cite Prov-Gigapath:
 
 ```bibtex
 @article{xu2024gigapath,
