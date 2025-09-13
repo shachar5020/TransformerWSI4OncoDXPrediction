@@ -147,6 +147,44 @@ To install the requirements, use:
     
     $ conda env create -f environment.yml
 
+Reproducing the analysis
+------- 
+
+The code to reproduce the figures from the paper "Deep Learning on Histopathological Images to Predict Breast Cancer Recurrence Risk and Chemotherapy Benefit" in matlab is also provided:
+
+Requirements
+------- 
+
+        MATLAB R2024a (tested version)
+        
+        Required data tables (for selected analyses, see below)
+
+Usage
+-----
+
+Clone or download the repository and run the provided scripts together with the included metadata and functions folders. These reproduce the main figures presented in the paper.
+
+Main Analysis Scripts
+--------------
+
+        main_analyses_UCMC.m and main_analyses_TCGA.m
+        
+        Reproduce the figures corresponding to the UCMC and TCGA cohorts.
+
+
+Chemotherapy Benefit Analyses
+--------------
+
+        ChemoBenefit_baseline.m
+        
+        ChemoBenefit_postMeno_adjusted.m
+        
+        ChemoBenefit_preMeno_adjusted.m
+
+        These scripts generate the Kaplan–Meier plots shown in Figure 3.
+        ⚠️ Note: They require access to the TAILORx clinical data table, which is not distributed with this repository.
+
+
 
 Citation
 --------
