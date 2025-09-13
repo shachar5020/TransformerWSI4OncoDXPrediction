@@ -147,6 +147,9 @@ To install the requirements, use:
     
     $ conda env create -f environment.yml
 
+Reproducing the analysis
+------- 
+
 The code to reproduce the figures from the paper "Deep Learning on Histopathological Images to Predict Breast Cancer Recurrence Risk and Chemotherapy Benefit" in matlab is also provided:
 
 Requirements
