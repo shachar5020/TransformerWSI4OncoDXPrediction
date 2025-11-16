@@ -199,12 +199,13 @@ If you use this code, please cite the Prov-Gigapath paper and our papers:
   publisher={Cold Spring Harbor Laboratory Press}
 }
 
-@article {Cohen2025Onco,
-	author = {Cohen, Shachar and Shamai, Gil and Sabo, Edmond and Cretu, Alexandra and Barshak, Iris and Goldman, Tal and Bar-Sela, Gil and Pearson, Alexander T. and Huo, Dezheng and Howard, Frederick M. and Kimmel, Ron and Mayer, Chen},
-	title = {Prediction of OncotypeDX recurrence score using H\&E stained WSI images},
-	year = {2025},
-	publisher = {Cold Spring Harbor Laboratory Press},
-	journal = {medRxiv}
+@article{cohen2025prediction,
+  title={Prediction of OncotypeDX recurrence score using H\&E stained WSI images},
+  author={Cohen, Shachar and Shamai, Gil and Sabo, Edmond and Cretu, Alexandra and Barshak, Iris and Goldman, Tal and Bar-Sela, Gil and Pearson, Alexander T and Huo, Dezheng and Howard, Frederick M and others},
+  journal={medRxiv},
+  pages={2025--07},
+  year={2025},
+  publisher={Cold Spring Harbor Laboratory Press}
 }
 
 @article{xu2024gigapath,
