@@ -188,7 +188,7 @@ Chemotherapy Benefit Analyses
 
 Citation
 --------
-If you use this code, please cite both the Prov-Gigapath paper and our paper:
+If you use this code, please cite the Prov-Gigapath paper and our papers:
 ```bibtex
 @article{shamai2025deep,
   title={Deep Learning on Histopathological Images to Predict Breast Cancer Recurrence Risk and Chemotherapy Benefit},
@@ -197,6 +197,14 @@ If you use this code, please cite both the Prov-Gigapath paper and our paper:
   pages={2025--05},
   year={2025},
   publisher={Cold Spring Harbor Laboratory Press}
+}
+
+@article {Cohen2025Onco,
+	author = {Cohen, Shachar and Shamai, Gil and Sabo, Edmond and Cretu, Alexandra and Barshak, Iris and Goldman, Tal and Bar-Sela, Gil and Pearson, Alexander T. and Huo, Dezheng and Howard, Frederick M. and Kimmel, Ron and Mayer, Chen},
+	title = {Prediction of OncotypeDX recurrence score using H\&E stained WSI images},
+	year = {2025},
+	publisher = {Cold Spring Harbor Laboratory Press},
+	journal = {medRxiv}
 }
 
 @article{xu2024gigapath,
